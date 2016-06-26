@@ -11,6 +11,7 @@ int findMax(int x[], int N) {
 
 int main (int argc, char** argv) {
   int x[255], N;
+  for (int i = 0; i < 256; i++) x[i] = 0;
   std::cout << "Enter the size of array from 1 to 256: ";
   std::cin >> N;
   std::cout << "Enter " << N << " elements of the array: ";
