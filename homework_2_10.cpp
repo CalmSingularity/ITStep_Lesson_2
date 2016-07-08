@@ -12,6 +12,6 @@ int main(int argc, char** argv) {
     // std::cout << "A[" << i << "] = " << A[i] << "\n";
     // std::cout << "Product = " << product << "\n";
   };
-  std::cout << "The geometric average is " << pow(product, 1.0 / 16.0) << "\n";
+  std::cout << "The geometric average is " << sqrt(sqrt(sqrt(sqrt(product)))) << "\n";
   return 0;
 }

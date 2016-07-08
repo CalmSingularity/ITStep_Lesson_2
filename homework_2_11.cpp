@@ -6,7 +6,7 @@ void decToBase(int N, int B) {
   int remainder = N;
   int length = floor(log(N) / log(B));
   char result[256];
-  for (int i = length; i >= 0; i--) {
+  for (int i = length; i >= 0; --i) {
     switch (remainder % B) {
       case 0: result[i] = '0'; break;
       case 1: result[i] = '1'; break;
@@ -25,7 +25,7 @@ void decToBase(int N, int B) {
 
   // Print result:
   std::cout << N << " in the " << B << "-decimal format: ";
-  for (int i = 0; i <= length; i++) {
+  for (int i = 0; i <= length; ++i) {
     std::cout << result[i];
   }
   std::cout << "\n";
@@ -37,7 +37,7 @@ int main(int argc, char** argv) {
   // std::cout << "Enter an integer number: ";
   // std::cin >> N;
 
-  for (int B = 2; B <= 10; B++) {
+  for (int B = 2; B <= 10; ++B) {
     decToBase(N, B);
   }
 
